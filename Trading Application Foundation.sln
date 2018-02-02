@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\BoostServer.vcproj", "{ED269B8B-0EF1-44BE-A213-96E06C1E3412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs10.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = API\\API.csproj
+		SccProjectName1 = API
+		SccLocalPath1 = API
+		SccProjectUniqueName2 = Client\\Client.csproj
+		SccProjectName2 = Client
+		SccLocalPath2 = Client
+		SccProjectUniqueName3 = Server\\BoostServer.vcproj
+		SccProjectName3 = Server
+		SccLocalPath3 = Server
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Debug|Win32.Build.0 = Debug|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Release|Any CPU.ActiveCfg = Release|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Release|Win32.ActiveCfg = Release|Win32
+		{ED269B8B-0EF1-44BE-A213-96E06C1E3412}.Release|Win32.Build.0 = Release|Win32
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{40D5A46E-9ACC-4B21-B150-B6ACAD6F7A2B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{20AF9638-2BC3-4B87-87E5-34A33CC44DD1}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

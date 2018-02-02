@@ -1,0 +1,49 @@
+﻿<Window x:Class="Meow.FR.TAF.Client.WndMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amChartData="clr-namespace:AmCharts.Windows.Stock.Data;assembly=AmCharts.Windows.Stock"
+    xmlns:amChart="clr-namespace:AmCharts.Windows.Stock;assembly=AmCharts.Windows.Stock"
+    Title="TAF Dashboard" Height="450" Width="800" Background="Gray">
+    <DockPanel LastChildFill="True">
+        <StackPanel Width="85" DockPanel.Dock="Left" Background="Black" Margin="5,0,5,5">
+            <TextBlock Foreground="Yellow" Margin="0,0,0,5">Realtime data:</TextBlock>
+            <TextBlock Foreground="White" FontSize="12" HorizontalAlignment="Center">Euro-Yen:</TextBlock>
+            <TextBlock Foreground="White" FontSize="20" HorizontalAlignment="Center" Name="txtEURJPY">-</TextBlock>
+            <TextBlock Foreground="White" FontSize="12" HorizontalAlignment="Center">Microsoft:</TextBlock>
+            <TextBlock Foreground="White" FontSize="20" HorizontalAlignment="Center" Name="txtMicrosoft">-</TextBlock>
+            <TextBlock Foreground="White" FontSize="12" HorizontalAlignment="Center">Credit Agricole:</TextBlock>
+            <TextBlock Foreground="White" FontSize="20" HorizontalAlignment="Center" Name="txtCreditAgricole">-</TextBlock>
+            <TextBlock Foreground="White" FontSize="12" HorizontalAlignment="Center">Sony:</TextBlock>
+            <TextBlock Foreground="White" FontSize="20" HorizontalAlignment="Center" Name="txtSony">-</TextBlock>
+        </StackPanel>
+        <DockPanel LastChildFill="True" Background="Black" Margin="5,0,5,5">
+            <TextBlock Margin="0,0,0,5" Foreground="Yellow" DockPanel.Dock="Top">Retrieve historic data (last 100 days) for:</TextBlock>
+            <TextBox Margin="5" DockPanel.Dock="Top" TextAlignment="Center" Name="txtTicker">GOOG EQUITY</TextBox>
+            <Button Margin="5" DockPanel.Dock="Top" Click="Button_Click">Get</Button>
+            <amChart:StockChart Margin="5" Background="White">
+                <amChart:StockChart.DataSets>
+                    <amChartData:DataSet Title="Google" ShortTitle="RD"
+                             ItemsSource="{Binding Path=Data}" DateMemberPath="Time"
+                             OpenMemberPath="Open" HighMemberPath="High" 
+                             LowMemberPath="Low" CloseMemberPath="Close"
+                             ValueMemberPath="Close" VolumeMemberPath="Volume">
+                    </amChartData:DataSet>
+                </amChart:StockChart.DataSets>
+
+                <amChart:StockChart.Charts>
+                    <amChart:Chart Title="Stock Prices" GridHeight="2*">
+                        <amChart:Chart.Graphs>
+                            <amChart:Graph GraphType="Candlestick" />
+                        </amChart:Chart.Graphs>
+                    </amChart:Chart>
+
+                    <amChart:Chart Title="Volume">
+                        <amChart:Chart.Graphs>
+                            <amChart:Graph GraphType="Column" DataField="Volume" PeriodValue="Sum" />
+                        </amChart:Chart.Graphs>
+                    </amChart:Chart>
+                </amChart:StockChart.Charts>
+            </amChart:StockChart>
+        </DockPanel>
+    </DockPanel>
+</Window>
